@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="bprime",
-    version="0.1.0",
+    version="0.1.1",  # Increment version
     author="Loca Martin",
     author_email="locaboyff@gmail.com",
     description="A digital stopwatch with classic green display",
@@ -14,14 +14,15 @@ setup(
     url="https://github.com/locamartin/bprime",
     packages=find_packages(),
     package_data={
-        'prime': ['digi7/*.ttf'],
+        'bprime': ['digi7/digital-7.ttf'],  # Fixed package name
     },
+    include_package_data=True,  # Important for including data files
     install_requires=[
         'PyQt5>=5.15.4',
     ],
     entry_points={
         'console_scripts': [
-            'digital-stopwatch = digital_stopwatch.stopwatch:main',
+            'bprime = bprime.prime.bprime:main',  # Corrected entry point
         ],
     },
     classifiers=[
