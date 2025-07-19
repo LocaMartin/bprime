@@ -1,6 +1,7 @@
 # B-Prime Stopwatch
 
->[!CAUTION]This project is under maintenance due to soeme issue in `setup.py` bprime is not recognised.
+>[!CAUTION]
+>This project is under maintenance due to soeme issue in `setup.py` bprime is not recognised.
 
 <div align="center">
   <img src="prime.png"/>
